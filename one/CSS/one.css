@@ -1,0 +1,93 @@
+.footer .footer-text, .banner .banner-text {
+  color: #fff;
+  text-align: center;
+}
+
+body {
+  background-color: #b3b3b3;
+}
+
+html {
+  box-sizing: border-box;
+  direction: rtl;
+}
+
+* {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+*::after, *::before {
+  box-sizing: inherit;
+}
+
+.navbar {
+  padding: 0.25rem;
+  background-color: #008000;
+}
+.navbar .nav-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+}
+.navbar .nav-item {
+  list-style: none;
+  font-size: 40px;
+  margin: 0.25rem 2rem;
+}
+.navbar .nav-link {
+  transition: 0.3s;
+  -o-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -webkit-transition: 0.3s;
+  text-decoration: none;
+  color: #fff;
+}
+.navbar .nav-link:hover, .navbar .nav-link:focus {
+  border-bottom: 1px solid #fff;
+}
+
+.banner {
+  padding: 2rem;
+  background-color: #008b8b;
+}
+.banner .banner-head {
+  transition: 0.3s;
+  -o-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -webkit-transition: 0.3s;
+  color: #ffa500;
+  font-size: 34px;
+  display: inline-block;
+  padding: 2rem 0.25rem;
+}
+.banner .banner-head:focus, .banner .banner-head:hover {
+  color: #ffff00;
+}
+.banner .banner-text {
+  width: 75%;
+  margin: 0 auto;
+  font-size: 20px;
+}
+
+.footer {
+  padding: 1rem;
+  background-color: rgba(0, 76, 148, 0.7);
+}
+.footer .footer-head {
+  transition: 0.3s;
+  -o-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -webkit-transition: 0.3s;
+  color: #dc143c;
+  font-size: 28px;
+  display: inline-block;
+  padding: 2rem 0.25rem;
+}
+.footer .footer-head:focus, .footer .footer-head:hover {
+  color: #ffd700;
+}
+.footer .footer-text {
+  color: #ffff00;
+}/*# sourceMappingURL=one.css.map */
