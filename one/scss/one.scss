@@ -1,85 +1,4 @@
-// Variable **
-$color-0: #000;
-$color-1: #008000;
-$color-2: #004c94;
-$color-3: #008b8b;
-$color-4: #00ffff;
-$color-5: #dc143c;
-$color-6: #ffa500;
-$color-7: #ffd700;
-$color-8: #ffff00;
-$color-9: #fff;
-
-$font-size-sm : 10px;
-$font-size-md : 16px;
-$font-size-lg : 22px;
-$font-size-xl : 28px;
-$font-size-xxl: 34px;
-
-$spc-sm : .25rem;
-$spc-md : .5rem;
-$spc-lg : 1rem;
-$spc-xl : 2rem;
-$spc-xxl: 4rem;
-
-$w-auto: auto;
-$w-100 : 100%;
-$w-75  : 75%;
-$w-50  : 50%;
-$w-25  : 25%;
-
-
-
-// Mixin **
-// میکسین ها باید بالاترین مقدار عناصر باشند
-
-@mixin space($space-vlaue) {
-    padding: $space-vlaue;
-}
-
-@mixin toggle($time: .3s) {
-    transition        : $time;
-    -o-transition     : $time;
-    -moz-transition   : $time;
-    -webkit-transition: $time;
-}
-
-@mixin heading($color-text, $font-size, $color-toggle) {
-    @include toggle();
-    color    : $color-text;
-    font-size: $font-size;
-    display  : inline-block;
-    padding  : $spc-xl $spc-sm;
-
-    &:focus,
-    &:hover {
-        color: $color-toggle;
-    }
-}
-
-
-
-// Extend ##
-%text {
-    color     : $color-9;
-    text-align: center;
-}
-
-
-
-// Function
-@function doubleSize($fontSize) {
-    @return $fontSize * 2;
-}
-
-body {
-    // background-color: lighten($color: #000000, $amount: 50%);
-    background-color: darken($color: #ffffff, $amount: 30%);
-    // height: 200vh;
-}
-
-
-
+@import "partial";
 
 // Style
 html {
@@ -112,7 +31,11 @@ html {
     .nav-item {
         list-style: none;
         $font-big : 40px !global;
-        font-size : $font-big;
+        font: {
+            size: $font-big;
+            weight: 500;
+            family: 'Vazir';
+        }
         margin    : $spc-sm $spc-xl;
 
     }
@@ -134,7 +57,7 @@ html {
     background-color: $color-3;
 
     .banner-head {
-        @include heading($color-6, $font-size-xxl, $color-8)
+        @include heading($color-8, $font-size-xxl, $color-6);
     }
 
     .banner-text {
@@ -151,11 +74,11 @@ html {
 
 
     .footer-head {
-        @include heading($color-5, $font-size-xl, $color-7)
+        @include heading($color-7, $font-size-xl, $color-5);
     }
 
     .footer-text {
         @extend %text;
-        color: $color-8;
+        color: $color-4;
     }
 }

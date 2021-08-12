@@ -1,0 +1,77 @@
+// Variable **
+$color-0: #000;
+$color-1: #008000;
+$color-2: #004c94;
+$color-3: #008b8b;
+$color-4: #00ffff;
+$color-5: #dc143c;
+$color-6: #ffa500;
+$color-7: #ffd700;
+$color-8: #ffff00;
+$color-9: #fff;
+$font-size-sm : 10px;
+$font-size-md : 16px;
+$font-size-lg : 22px;
+$font-size-xl : 28px;
+$font-size-xxl: 34px;
+
+$spc-sm : .25rem;
+$spc-md : .5rem;
+$spc-lg : 1rem;
+$spc-xl : 2rem;
+$spc-xxl: 4rem;
+
+$w-auto: auto;
+$w-100 : 100%;
+$w-75  : 75%;
+$w-50  : 50%;
+$w-25  : 25%;
+
+
+
+// Mixin **
+// میکسین ها باید بالاترین مقدار عناصر باشند
+
+@mixin space($space-vlaue) {
+    padding: $space-vlaue;
+}
+
+@mixin toggle($time: .3s) {
+    transition        : $time;
+    -o-transition     : $time;
+    -moz-transition   : $time;
+    -webkit-transition: $time;
+}
+
+@mixin heading($color-text, $font-size, $color-toggle) {
+    @include toggle();
+    color    : $color-text;
+    font-size: $font-size;
+    display  : inline-block;
+    padding  : $spc-xl $spc-sm;
+
+    &:focus,
+    &:hover {
+        color: $color-toggle;
+    }
+}
+
+
+
+// Extend ##
+%text {
+    color     : $color-9;
+    text-align: center;
+}
+
+
+
+// Function
+@function doubleSize($fontSize) {
+    @return $fontSize * 2;
+}
+
+body {
+    // background-color: lighten($color: #000000, $amount: 50%);
+    background-color: darken($color: #ffffff, $amount: 30%);
+}
