@@ -1,0 +1,7 @@
+@import "partial";
+
+@for $i from 1 to 6 {
+    .paragraph-#{$i} {
+        color: map-get($map: $colors, $key: $i);
+    }
+}
