@@ -1,1 +1,53 @@
-/*# sourceMappingURL=dataType.css.map */
+@charset "UTF-8";
+body {
+  background-color: #b3b3b3;
+}
+
+/* Numbers */
+.number {
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+/* String */
+.string {
+  font-family: "Courier New", Courier, monospace;
+  font-style: italic;
+  font-weight: bold;
+}
+
+/* Colors */
+.color {
+  border-color: rgba(35, 91, 154, 0.8);
+  background: orangered;
+  color: #348b91;
+  outline-color: rgba(0, 255, 128, 0.9);
+}
+
+/* Lists */
+.list {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  margin: 10px 20px 30px 40px;
+  border: 1px solid #348b91;
+}
+
+/* Maps */
+/* متغیرهایی که شامل کلید و مقدار هستند */
+.header {
+  color: red;
+}
+
+.section {
+  color: darkcyan;
+}
+
+.aside {
+  color: seagreen;
+}
+
+.footer {
+  color: violet;
+}
+
+/* Boolean */
+/* null *//*# sourceMappingURL=dataType.css.map */

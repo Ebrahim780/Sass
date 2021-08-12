@@ -1,0 +1,86 @@
+@import "partial";
+
+/* Numbers */
+.number {
+    font-weight: 400; // integer
+    line-height: 1.6; // decimal
+}
+
+
+/* String */
+.string {
+    font-family: 'Courier New', Courier, monospace;
+    font-style : italic;
+    font-weight: bold;
+}
+
+
+/* Colors */
+.color {
+    border-color : rgba(35, 91, 154, 0.8);
+    background   : orangered;
+    color        : #348b91;
+    outline-color: hsla(150, 100, 50, 0.9);
+}
+
+
+/* Lists */
+.list {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin     : 10px 20px 30px 40px;
+    border     : 1px solid #348b91;
+}
+
+
+/* Maps */
+/* متغیرهایی که شامل کلید و مقدار هستند */ 
+
+$color-one:(
+    primary: red,
+    seconadary: orange,
+    tertiary: orangered
+);
+
+$color-two:(
+    primary: blue,
+    secondary: cyan,
+    tertiary: darkcyan
+);
+
+$color-three:(
+    primary: green,
+    secondary: lime,
+    tertiary: seagreen
+);
+
+$color-four:(
+    primary: purple,
+    secondary: pink,
+    tertiary: violet
+);
+
+// نحوه ی استفاده
+.header {
+    color: map-get($map: $color-one, $key: primary);
+}
+
+.section {
+    color: map-get($map: $color-two, $key: tertiary);
+}
+
+.aside {
+    color: map-get($map: $color-three, $key: tertiary);
+}
+
+.footer {
+    color: map-get($map: $color-four, $key: tertiary);
+}
+
+
+/* Boolean */
+// true
+// false
+
+
+/* null */
+// has no value
