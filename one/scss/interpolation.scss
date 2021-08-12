@@ -1,4 +1,18 @@
+@import "partial";
 
+/* inerpolation */
+/* کلمات پر کاربرد را درون یک متغیر ذخیره می کند */ 
+/* برای استفاده باید متغیر را درون {}# قرار داد */ 
+
+$bg: "background";
 $b: "border";
 $c: "color";
 $f: "font";
+
+.heading {
+    #{$c}:$color-3;
+    #{$bg}-#{$c}: $color-9;
+    #{$b}: 1px solid $color-5;
+    #{$b}-radius: $font-size-lg;
+    #{$f}-family: 'Courier New', Courier, monospace;
+}
