@@ -1,8 +1,4 @@
 @charset "UTF-8";
-body {
-  background-color: #b3b3b3;
-}
-
 /* Numbers */
 .number {
   font-weight: 400;

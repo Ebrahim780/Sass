@@ -17,9 +17,13 @@ html {
     }
 }
 
+body {
+    // background-color: lighten($color: #000000, $amount: 50%);
+    background-color: darken($color: #ffffff, $amount: 30%);
+}
+
 .navbar {
-    @include space($spc-sm);
-    background-color: $color-1;
+    @include container($spc-sm, $color-1);
 
     .nav-list {
         display        : flex;
@@ -31,12 +35,14 @@ html {
     .nav-item {
         list-style: none;
         $font-big : 40px !global;
+
         font: {
-            size: $font-big;
+            size  : $font-big;
             weight: 500;
             family: 'Vazir';
         }
-        margin    : $spc-sm $spc-xl;
+
+        margin : $spc-sm $spc-xl;
 
     }
 
@@ -53,8 +59,7 @@ html {
 }
 
 .banner {
-    @include space($spc-xl);
-    background-color: $color-3;
+    @include container($spc-xl, $color-3);
 
     .banner-head {
         @include heading($color-8, $font-size-xxl, $color-6);
@@ -62,15 +67,26 @@ html {
 
     .banner-text {
         @extend %text;
-        width: $w-75;
-        margin: 0 auto;
+        width    : $w-75;
+        margin   : 0 auto;
         font-size: doubleSize($font-size-sm);
     }
 }
 
+.loop {
+    @include container($spc-xxl, $color-7);
+
+    .loop-head {
+        @include heading($color-2, $font-size-xl, $color-3);
+    }
+
+    p {
+        text-align: center;
+    }
+}
+
 .footer {
-    @include space($spc-lg);
-    background-color: transparentize($color: $color-2, $amount: 0.3);
+    @include container($spc-md, $color-2);
 
 
     .footer-head {

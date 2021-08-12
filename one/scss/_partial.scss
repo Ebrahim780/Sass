@@ -30,15 +30,22 @@ $w-25  : 25%;
 
 
 // Map **
-
+$dark:(
+    1:black,
+    2:dimgray,
+    3:gray,
+    4:darkgray,
+    5:white,
+);
 
 
 
 // Mixin **
 // میکسین ها باید بالاترین مقدار عناصر باشند
 
-@mixin space($space-vlaue) {
+@mixin container($space-vlaue, $bg-color) {
     padding: $space-vlaue;
+    background-color: $bg-color;
 }
 
 @mixin toggle($time: .3s) {
@@ -74,9 +81,4 @@ $w-25  : 25%;
 // Function
 @function doubleSize($fontSize) {
     @return $fontSize * 2;
-}
-
-body {
-    // background-color: lighten($color: #000000, $amount: 50%);
-    background-color: darken($color: #ffffff, $amount: 30%);
 }

@@ -1,7 +1,33 @@
 @import "partial";
 
-@for $i from 1 to 6 {
+// @for
+
+// روش اول
+@for $i from 1 through 5 {
     .paragraph-#{$i} {
-        color: map-get($map: $colors, $key: $i);
+        color: map-get($map: $dark, $key: $i);
+    }
+}
+
+// روش دوم
+// عدد دوم باید یکی بیشر از تعداد عناصر باشد
+// @for $i from 1 to 10 {
+//     .paragraph-#{$i} {
+//         color: map-get($map: $dark, $key: $i);
+//     }
+// }
+
+
+// @each
+
+$eachDark: black dimgray gray darkgray white;
+@each $color in $eachDark {
+    .paragraph-#{$color} {
+        @if($color == darkgray) {
+            color: whitesmoke;
+        }
+        @else {
+            color: $color;
+        }
     }
 }

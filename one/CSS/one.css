@@ -3,10 +3,6 @@
   text-align: center;
 }
 
-body {
-  background-color: #b3b3b3;
-}
-
 html {
   box-sizing: border-box;
   direction: rtl;
@@ -19,6 +15,10 @@ html {
 }
 *::after, *::before {
   box-sizing: inherit;
+}
+
+body {
+  background-color: #b3b3b3;
 }
 
 .navbar {
@@ -73,9 +73,30 @@ html {
   font-size: 20px;
 }
 
+.loop {
+  padding: 4rem;
+  background-color: #ffd700;
+}
+.loop .loop-head {
+  transition: 0.3s;
+  -o-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -webkit-transition: 0.3s;
+  color: #004c94;
+  font-size: 28px;
+  display: inline-block;
+  padding: 2rem 0.25rem;
+}
+.loop .loop-head:focus, .loop .loop-head:hover {
+  color: #008b8b;
+}
+.loop p {
+  text-align: center;
+}
+
 .footer {
-  padding: 1rem;
-  background-color: rgba(0, 76, 148, 0.7);
+  padding: 0.5rem;
+  background-color: #004c94;
 }
 .footer .footer-head {
   transition: 0.3s;
