@@ -1,67 +1,123 @@
 .logo {
     @include flexLayout;
-    font-size: 70px;
-    color: $color-primary;
-    width: 110px;
-    height: 110px;
-    border: 3px solid;
+    font-size    : 70px;
+    color        : $color-primary;
+    width        : 110px;
+    height       : 110px;
+    border       : 3px solid;
     border-radius: 50%;
-    margin-right: 20px;
+    margin-right : 20px;
 }
 
 .main-name {
     font-family: $font-sahel;
-    font-size: 50px;
-    color: $color-secondary;
+    font-size  : 50px;
+    color      : $color-secondary;
     @include textStyle;
 }
 
 .sub-name {
     font-family: $font-sahel;
-    font-size: 18px;
-    color: $color-secondary;
-    text-align: center;
+    font-size  : 18px;
+    color      : $color-secondary;
+    text-align : center;
     @include textStyle;
 }
 
 .main-heading {
-    font-family: $font-nastaliq;
-    font-size: 80px;
-    font-weight: 300;
-    color: $color-primary;
-    margin-top: 120px;
+    font-family  : $font-nastaliq;
+    font-size    : 80px;
+    font-weight  : 300;
+    color        : $color-primary;
+    margin-top   : 120px;
     margin-bottom: 40px;
 }
 
 .sub-heading {
-    font-family: $font-sahel;
-    font-size: 40px;
-    font-weight: 300;
-    color: $color-secondary;
+    font-family  : $font-sahel;
+    font-size    : 40px;
+    font-weight  : 300;
+    color        : $color-secondary;
     margin-bottom: 80px;
 }
 
 .main-btn {
-    width: 170px;
-    height: 45px;
-    font-family: $font-sahel;
-    font-size: 14px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    color: $color-primary;
+    width           : 170px;
+    height          : 45px;
+    font-family     : $font-sahel;
+    font-size       : 14px;
+    text-transform  : uppercase;
+    letter-spacing  : 1px;
+    color           : $color-primary;
     background-color: transparent;
-    border: 1px solid;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: .3s;
+    border          : 1px solid;
+    cursor          : pointer;
+    border-radius   : 5px;
+    transition      : .3s;
 
     &:hover {
         background-color: $color-primary;
-        color: $color-dark;
+        color           : $color-dark;
+        border          : 1px solid transparent;
     }
 }
 
-// .about-us-left{}
-// .about-us-right{}
-// .stars{}
-// .description{}
+.card {
+    width   : calc(100% / 3);
+    height  : 30vw;
+    position: relative;
+    overflow: hidden;
+
+    &:hover .card-overlay {
+        left: 0;
+    }
+    &-overlay {
+        @include flexLayout;
+        @extend %fullSpace;
+        flex-direction: column;
+        position      : absolute;
+        left          : -100%;
+        top           : 0;
+        z-index       : 10;
+        transition: 1s;
+        color           : $color-white;
+        background-color: rgba($color: $color-primary, $alpha: 0.6);
+
+        &-header {
+            @include textStyle;
+            font-family: $font-nastaliq;
+            font-size  : 50px;
+        }
+
+        &-paragraph {
+            @include textStyle;
+            font-family  : $font-sahel;
+            font-size    : 30px;
+            margin-bottom: 30px
+        }
+
+        &-btn {
+            color: $color-white;
+            width: 150px;
+            height: 40px;
+            color: $color-primary;
+            background-color: $color-white;
+            font-family: $font-sahel;
+            border: 1px solid;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: .3s;
+
+            &:hover {
+                background-color: transparent;
+                color: $color-white;
+            }
+        }
+    }
+
+    &-img {
+        @extend %fullSpace;
+        object-fit: cover;
+        opacity   : .5;
+    }
+}
