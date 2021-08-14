@@ -1,3 +1,94 @@
+.navbar {
+    position: relative;
+    z-index : 200;
+
+    &-navigation {
+        display: flex;
+
+        &-left {
+            @include navbarLeft($color-dark);
+            left: -50vw;
+            transition: .7s ease;
+
+            .left-img {
+                width   : 50%;
+                position: absolute;
+                box-shadow: 0 15px 60px rgba($color: $color-black, $alpha: 0.4);
+                opacity: .7;
+                border-radius: 10px;
+            }
+
+            .left-img-1 {
+                top: 15%;
+                left: 15%;
+            }
+
+            .left-img-2 {
+                top: 35%;
+                left: 25%;
+            }
+
+            .left-img-3 {
+                top: 55%;
+                left: 35%;
+            }
+        }
+
+        &-right {
+            @include navbarLeft(#1f1d1d);
+            @include flexLayout;
+            right: -50vw;
+            transition: .7s ease;
+
+            .nav-list {
+
+                &-item {
+                    list-style: none;
+                }
+
+                &-link {
+                    @include textStyle;
+                    font-size: 40px;
+                    text-decoration: none;
+                    color: $color-secondary;
+                    font-family: $font-sahel;
+                    display: block;
+                    margin: 20px;
+                    text-align: center;
+                    transition: .5s ease;
+
+                    &:hover {
+                        color: $color-primary;
+                        letter-spacing: 2px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.checkbox:checked ~ .navbar-navigation .navbar-navigation-left {
+    left: 0;
+}
+.checkbox:checked ~ .navbar-navigation .navbar-navigation-right {
+    right: 0;
+}
+
+.checkbox:checked ~ .hamburger-menu .menu {
+    transform: rotateZ(90deg);
+}
+
+.checkbox:checked ~ .hamburger-menu .menu-line-1 {
+    transform: rotateZ(-40deg);
+}
+
+.checkbox:checked ~ .hamburger-menu .menu-line-2 {
+    opacity: 0;
+}
+
+.checkbox:checked ~ .hamburger-menu .menu-line-3 {
+    transform: rotateZ(40deg);
+}
 .header {
     width : 100%;
     height: 100vh;
@@ -99,7 +190,7 @@
             text-decoration: none;
             font-size      : 50px;
             color          : $color-secondary;
-            transition: .3s ease;
+            transition     : .3s ease;
 
             &:hover {
                 color: $color-primary;
@@ -109,8 +200,8 @@
 
     &-copyright-paragraph {
         font-family: $font-sahel;
-        font-size: 20px;
-        color: $color-secondary;
-        direction: rtl;
+        font-size  : 20px;
+        color      : $color-secondary;
+        direction  : rtl;
     }
 }

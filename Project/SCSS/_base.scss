@@ -45,6 +45,13 @@ Tahoma;
     transform: translate(-50%, -50%);
 }
 
+@mixin navbarLeft($navLeftColor) {
+    width: 50vw;
+    height: 100vh;
+    position: fixed;
+    background-color: $navLeftColor;
+}
+
 %fullSpace {
     width : 100%;
     height: 100%;
