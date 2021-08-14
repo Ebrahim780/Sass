@@ -1,0 +1,67 @@
+.logo {
+    @include flexLayout;
+    font-size: 70px;
+    color: $color-primary;
+    width: 110px;
+    height: 110px;
+    border: 3px solid;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.main-name {
+    font-family: $font-sahel;
+    font-size: 50px;
+    color: $color-secondary;
+    @include textStyle;
+}
+
+.sub-name {
+    font-family: $font-sahel;
+    font-size: 18px;
+    color: $color-secondary;
+    text-align: center;
+    @include textStyle;
+}
+
+.main-heading {
+    font-family: $font-nastaliq;
+    font-size: 80px;
+    font-weight: 300;
+    color: $color-primary;
+    margin-top: 120px;
+    margin-bottom: 40px;
+}
+
+.sub-heading {
+    font-family: $font-sahel;
+    font-size: 40px;
+    font-weight: 300;
+    color: $color-secondary;
+    margin-bottom: 80px;
+}
+
+.main-btn {
+    width: 170px;
+    height: 45px;
+    font-family: $font-sahel;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: $color-primary;
+    background-color: transparent;
+    border: 1px solid;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: .3s;
+
+    &:hover {
+        background-color: $color-primary;
+        color: $color-dark;
+    }
+}
+
+// .about-us-left{}
+// .about-us-right{}
+// .stars{}
+// .description{}
