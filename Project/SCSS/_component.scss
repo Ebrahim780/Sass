@@ -79,7 +79,7 @@
         left          : -100%;
         top           : 0;
         z-index       : 10;
-        transition: 1s;
+        transition: .5s ease-in;
         color           : $color-white;
         background-color: rgba($color: $color-primary, $alpha: 0.6);
 

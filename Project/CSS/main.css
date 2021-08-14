@@ -102,6 +102,43 @@ body {
   flex-wrap: wrap;
 }
 
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 70px 0;
+}
+.footer-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 70px;
+}
+.footer .social-media {
+  display: flex;
+  width: 300px;
+  justify-content: space-between;
+  margin-bottom: 70px;
+}
+.footer .social-media-item {
+  list-style: none;
+}
+.footer .social-media-link {
+  text-decoration: none;
+  font-size: 50px;
+  color: #bbb;
+  transition: 0.3s ease;
+}
+.footer .social-media-link:hover {
+  color: #d3ab55;
+}
+.footer-copyright-paragraph {
+  font-family: Sahel, Tahoma;
+  font-size: 20px;
+  color: #bbb;
+  direction: rtl;
+}
+
 .logo {
   display: flex;
   align-items: center;
@@ -189,7 +226,7 @@ body {
   left: -100%;
   top: 0;
   z-index: 10;
-  transition: 1s;
+  transition: 0.5s ease-in;
   color: #fff;
   background-color: rgba(211, 171, 85, 0.6);
 }
