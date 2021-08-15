@@ -15,16 +15,24 @@
     .navbar-navigation-right {
         width: 100vw;
         right: -100vw;
+
+        .nav-list {
+
+            &-link {
+                font-size: 30px;
+            }
+        }
     }
 
     .logo {
-        font-size: 15px;
+        font-size: 20px;
         width    : 40px;
         height   : 40px;
+        border: 1px solid;
     }
 
     .main-name {
-        font-size : 20px;
+        font-size : 30px;
         text-align: center;
     }
 
@@ -56,6 +64,10 @@
 
         .stars {
             margin: 0;
+
+            .star {
+                font-size: 12px;
+            }
         }
     }
 
@@ -94,10 +106,20 @@
         }
     }
 
+    .navbar-navigation-left {
+        display: none;
+    }
+
+    .navbar-navigation-right {
+        width: 100vw;
+        right: -100vw;
+    }
+
     .logo {
         font-size: 30px;
         width    : 60px;
         height   : 60px;
+        border: 2px solid;
     }
 
     .main-name {
