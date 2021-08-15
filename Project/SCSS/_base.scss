@@ -5,18 +5,17 @@ $color-primary  : #d3ab55;
 $color-secondary: #bbb;
 $color-white    : #fff;
 
+
 @font-face {
     font-family: Sahel;
-    src        : url('Sahel.eot');
-    src        : url('Sahel.eot?#iefix') format('embedded-opentype'),
-        url('Sahel.woff') format('woff'),
-        url('Sahel.ttf') format('truetype');
+    src        : url("../Font/Sahel.eot");
+    src        : url("../Font/Sahel.ttf") format("ttf"), url("../Font/Sahel.woff") format("woff");
     font-weight: normal;
 }
 
 @font-face {
     font-family: Nastaliq;
-    src        : url(../Font/IranNastaliq.ttf);
+    src        : url("../Font/IranNastaliq.ttf");
     font-weight: normal;
 }
 
@@ -46,9 +45,9 @@ Tahoma;
 }
 
 @mixin navbarLeft($navLeftColor) {
-    width: 50vw;
-    height: 100vh;
-    position: fixed;
+    width           : 50vw;
+    height          : 100vh;
+    position        : fixed;
     background-color: $navLeftColor;
 }
 
