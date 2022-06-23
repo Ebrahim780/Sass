@@ -1,1 +1,10 @@
-{"version":3,"sourceRoot":"","sources":["../scss/interpolation.scss","../scss/_partial.scss"],"names":[],"mappings":";AAEA;AACA;AACA;AAOA;EACI,OCRM;EDSN,kBCHM;EDIN;EACA,eCFY;EDGZ","file":"interpolation.css.map"}
+{
+    "version": 3,
+    "mappings": ";AAEA,kBAAkB;AAClB,mDAAmD;AACnD,kDAAkD;AAOlD,AAAA,QAAQ,CAAC;EACL,KAAK,ECRC,OAAO;EDSb,gBAAY,ECHN,IAAI;EDIV,MAAK,EAAE,GAAG,CAAC,KAAK,CCRV,OAAO;EDSb,aAAY,ECFA,IAAI;EDGhB,WAAY,EAAS,iCAAiC;CACzD",
+    "sources": [
+        "../SCSS/interpolation.scss",
+        "../SCSS/_partial.scss"
+    ],
+    "names": [],
+    "file": "interpolation.css"
+}

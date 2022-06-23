@@ -1,4 +1,4 @@
-.footer .footer-text, .banner .banner-text {
+.banner .banner-text, .footer .footer-text {
   color: #fff;
   text-align: center;
 }
@@ -13,6 +13,7 @@ html {
   margin: 0;
   padding: 0;
 }
+
 *::after, *::before {
   box-sizing: inherit;
 }
@@ -25,19 +26,22 @@ body {
   padding: 0.25rem;
   background-color: #008000;
 }
+
 .navbar .nav-list {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   text-align: center;
 }
+
 .navbar .nav-item {
   list-style: none;
   font-size: 40px;
   font-weight: 500;
-  font-family: "Vazir";
+  font-family: 'Vazir';
   margin: 0.25rem 2rem;
 }
+
 .navbar .nav-link {
   transition: 0.3s;
   -o-transition: 0.3s;
@@ -46,6 +50,7 @@ body {
   text-decoration: none;
   color: #fff;
 }
+
 .navbar .nav-link:hover, .navbar .nav-link:focus {
   border-bottom: 1px solid #fff;
 }
@@ -54,6 +59,7 @@ body {
   padding: 2rem;
   background-color: #008b8b;
 }
+
 .banner .banner-head {
   transition: 0.3s;
   -o-transition: 0.3s;
@@ -64,9 +70,11 @@ body {
   display: inline-block;
   padding: 2rem 0.25rem;
 }
+
 .banner .banner-head:focus, .banner .banner-head:hover {
   color: #ffa500;
 }
+
 .banner .banner-text {
   width: 75%;
   margin: 0 auto;
@@ -77,6 +85,7 @@ body {
   padding: 4rem;
   background-color: #ffd700;
 }
+
 .loop .loop-head {
   transition: 0.3s;
   -o-transition: 0.3s;
@@ -87,9 +96,11 @@ body {
   display: inline-block;
   padding: 2rem 0.25rem;
 }
+
 .loop .loop-head:focus, .loop .loop-head:hover {
   color: #008b8b;
 }
+
 .loop p {
   text-align: center;
 }
@@ -98,6 +109,7 @@ body {
   padding: 0.5rem;
   background-color: #004c94;
 }
+
 .footer .footer-head {
   transition: 0.3s;
   -o-transition: 0.3s;
@@ -108,9 +120,12 @@ body {
   display: inline-block;
   padding: 2rem 0.25rem;
 }
+
 .footer .footer-head:focus, .footer .footer-head:hover {
   color: #dc143c;
 }
+
 .footer .footer-text {
   color: #00ffff;
-}/*# sourceMappingURL=one.css.map */
+}
+/*# sourceMappingURL=one.css.map */

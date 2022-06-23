@@ -23,15 +23,14 @@ $spc-xxl: 4rem;
 
 $w-auto: auto;
 $w-100 : 100%;
-$w-75  : 75%;
-$w-50  : 50%;
-$w-25  : 25%;
+$w-75 : 75%;
+$w-50 : 50%;
+$w-25 : 25%;
 
 
 
 // Map **
-$dark:(
-    1:black,
+$dark:(1:black,
     2:dimgray,
     3:gray,
     4:darkgray,
@@ -49,18 +48,18 @@ $dark:(
 }
 
 @mixin toggle($time: .3s) {
-    transition        : $time;
-    -o-transition     : $time;
-    -moz-transition   : $time;
+    transition: $time;
+    -o-transition: $time;
+    -moz-transition: $time;
     -webkit-transition: $time;
 }
 
 @mixin heading($color-text, $font-size, $color-toggle) {
     @include toggle();
-    color    : $color-text;
+    color: $color-text;
     font-size: $font-size;
-    display  : inline-block;
-    padding  : $spc-xl $spc-sm;
+    display: inline-block;
+    padding: $spc-xl $spc-sm;
 
     &:focus,
     &:hover {
@@ -72,7 +71,7 @@ $dark:(
 
 // Extend ##
 %text {
-    color     : $color-9;
+    color: $color-9;
     text-align: center;
 }
 

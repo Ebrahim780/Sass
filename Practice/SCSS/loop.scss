@@ -21,11 +21,13 @@
 // @each
 
 $eachDark: black dimgray gray darkgray white;
+
 @each $color in $eachDark {
     .paragraph-#{$color} {
-        @if($color == darkgray) {
+        @if($color==darkgray) {
             color: whitesmoke;
         }
+
         @else {
             color: $color;
         }
